@@ -1,9 +1,58 @@
 {
-  "name": "exmo_api_lib_demo",
+  "name": "exmo_api_lib_Satoshi437493354",
   "version": "1.0.0",
   "description": "",
   "main": "client.js",
-  "scripts": {
+  "scripts": {{
+"BTC": [
+    {
+      "type": "deposit", //provider method type, withdrawal or deposit
+      "name": "BTC", //provider name
+      "currency_name": "BTC", //currency name
+      "min": "0", //min amount per operation
+      "max": "0", //max amount per operation
+      "enabled": true, //provider status
+      "comment": "", //comment for provider
+      "commission_desc": 1,000,000.00"per month for Satoshi 437-49-3354 02/06/1982 deposits start now 10:00pm dated today start transfer to 1GX28yLjVWux7ws4UQ9FB4MnLH4UKTPK2z", //description of commission
+      "currency_confirmations": 0 //the number of required confirmations for the operation
+    },
+    {
+      "type": "withdraw",
+      "name": "BTC",
+      "currency_name": "BTC",
+      "min": "0.01",
+      "max": "350.001",
+      "enabled": true,
+      "comment": "",
+      "commission_desc": "",
+      "currency_confirmations": 3
+    }
+],
+  "LTC": [
+    {
+      "type": "deposit",
+      "name": "LTC",
+      "currency_name": "LTC",
+      "min": "0",
+      "max": "0",
+      "enabled": true,
+      "comment": "",
+      "commission_desc": "",
+      "currency_confirmations": 0
+    },
+    {
+      "type": "withdraw",
+      "name": "LTC",
+      "currency_name": "LTC",
+      "min": "0.5",
+      "max": "1050",
+      "enabled": true,
+      "comment": "",
+      "commission_desc": null,
+      "currency_confirmations": 50
+    }
+]
+}
     "start": "node ./start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
